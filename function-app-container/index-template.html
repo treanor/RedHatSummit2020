@@ -35,7 +35,7 @@ function ajaxpost(){
 
     mypostrequest.open("POST", "https://FUNCTIONNAME.azurewebsites.net/api/HttpTrigger?" +
                                "subscription_id=" + document.getElementById("subscription_id").value + "&" +
-                               "tenant=" + document.getElementById("tenant").value + "&" +
+                               "tenant_id=" + document.getElementById("tenant_id").value + "&" +
                                "client_id=" + document.getElementById("client_id").value + "&" +
                                "secret=" + document.getElementById("secret").value, true);
     mypostrequest.setRequestHeader("Content-type", "text/plain");
@@ -54,9 +54,9 @@ function ajaxpost(){
   <div/>
   <textarea id="subscription_id" cols="80"></textarea>
   <div/>
-  Tenant:
+  Tenant_ID:
   <div/>
-  <textarea id="tenant" cols="80"></textarea>
+  <textarea id="tenant_id" cols="80"></textarea>
   <div/>
   Client Id:
   <div/>
